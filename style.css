@@ -188,7 +188,7 @@ main{
     align-content: center;
     text-align: center;
     align-items: center;
-   
+    border-radius: 5%;
     
    }
    .projeto p{
@@ -197,13 +197,20 @@ main{
    color: #3a1705;
    position: absolute;              
    top: 45%; 
-   left: 15%;
+   left: 5%;    
+   }
+   .projeto p:hover{    
+    font-weight: bolder;
    }
    .projeto:hover{
     background-color: #fff;
     cursor: pointer;
     transition: 0.5s;
+    border-bottom-left-radius: 50%;
+    font-weight: 600;
    }
+   
+   
    
 
 @media (max-width:600px) {
@@ -241,7 +248,8 @@ main{
     }
     main{
         flex-direction: column;
-        justify-content: space-between;                               
+        justify-content:space-between;  
+        padding-top: 25%;                            
     }
     .text-bx{
         width: 100%;
