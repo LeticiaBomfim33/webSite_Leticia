@@ -129,6 +129,9 @@ main{
 .medias-socias a{
     text-decoration: none;
 }
+.medias-socias a:hover{
+    cursor: pointer;
+}
 
 .medias-socias i{
     font-size: 23px;
@@ -241,7 +244,7 @@ main{
       
    
 
-@media (max-width:600px) {
+@media (max-width:970px) {
     nav .menu-icon{
         display: block;
     }
