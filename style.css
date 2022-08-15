@@ -78,7 +78,7 @@ main{
     align-items: center;     
     justify-content: space-between;     
     padding: 18% 8%;
-    background-color: #731009fa;
+    background-color: #08052e;
     
 }
 .text-bx{
@@ -88,6 +88,7 @@ main{
 .text-bx h1{
     font-size: 3rem;
     text-transform: uppercase;
+    color: #fff;
 }
 .text-bx h2{
     color: #f1676d;        
@@ -156,13 +157,16 @@ main{
     border-bottom: 10px solid #1d307c;
     border-left: 10px solid #1d307c;
     border-radius: 80px;
-    cursor: pointer;
-    
+    cursor: pointer;    
+   }
+   .img-bx:hover{
+    border-bottom: 10px solid #9b4a5a;
+    border-left: 10px solid #9b4a5a; 
+    transition: 0.7s;
    }
         
    .about{
-    color: #000;
-    
+    color: #000;    
     position: relative;
     visibility: hidden;
    }
@@ -238,7 +242,7 @@ main{
    z-index: 1;
    padding: 10% ;  
    overflow: auto;    
-   background-color:rgba(0,0,0,0.5);   
+   background-color:rgba(0,0,0,0.9  );   
    text-shadow: black 0.1em 0.1em 0.2em;  
    }
       
@@ -280,7 +284,7 @@ main{
     main{
         flex-direction: column;
         justify-content:space-between;  
-        padding-top: 25%;                            
+        padding-top: 30%;                            
     }
     .text-bx{
         width: 100%;
