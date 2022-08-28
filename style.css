@@ -5,14 +5,13 @@
     box-sizing: border-box;
     font-family: 'Roboto',sans-serif;
 }
-body{
-    
+body{    
     min-height: 100vh;
 }
 .container{
-    max-width: 1300px;
-    margin: 0 auto;
-    
+    max-width: 1000px;
+    margin: 0 auto;   
+    background-color: pink; 
 }
 nav{
     display: flex;
@@ -21,7 +20,7 @@ nav{
     height: 100px;
     background-color: #3a1705;
     box-shadow: 20px; 
-    position: fixed;   
+    position:relative;   
     top: 0;
     left: 0;
     width: 100%;
@@ -60,7 +59,7 @@ nav ul li a:hover{
     text-shadow: 3px 3px 3px rgba(235,237,90, 0.3) ;    
     
 }
-nav ul button{
+nav button{
     border: 0 5px 0 0;
     background-color: #5654b3;
     color: white;
@@ -76,10 +75,9 @@ nav ul button{
 main{
     display: flex;
     align-items: center;     
-    justify-content: space-between;     
-    padding: 18% 8%;
+    justify-content: space-between;         
     background-color: #08052e;
-    
+    padding: 8%;
 }
 .text-bx{
     width: 45%;
@@ -173,10 +171,11 @@ main{
    .img-bx:hover + .img-bx .about{
     visibility: visible;
    }
-   #div_2{
-    display: flex;
+   .projetos{
+    display:flex;
+    width: 100%;
     flex-wrap: wrap;
-    justify-content:center;    
+    justify-content:space-around;    
     text-align: center;  
     padding: 15% 8%;
     background-color: palevioletred;
@@ -189,7 +188,7 @@ main{
     height: 180px;
     background-color: #1d307c;
     margin:20px;
-    display: inline;
+    display: block;
     position: relative;
     cursor: pointer;
     align-content: center;
@@ -245,8 +244,35 @@ main{
    background-color:rgba(0,0,0,0.9  );   
    text-shadow: black 0.1em 0.1em 0.2em;  
    }
-      
-   
+   .form{
+    width: 100%;
+    background-color: #467402;
+    display: flex;
+    justify-content: space-between;
+  }
+  .form input{
+    margin: 3px;
+  }
+  input#msg{
+    height: 50%;
+  }
+  .info{
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  }
+  .campos{
+  width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+  }
+  input::placeholder{
+    color: darkkhaki;
+    float:left;
+  }
+         
 
 @media (max-width:970px) {
     nav .menu-icon{
@@ -276,7 +302,7 @@ main{
         font-size: 18px;
         color: white;
     }
-    nav ul button{
+    nav button{
         background-color: #f1676d;
         font-size: 18px;
         margin: 10px;
@@ -284,7 +310,7 @@ main{
     main{
         flex-direction: column;
         justify-content:space-between;  
-        padding-top: 30%;                            
+        padding-top: 18% 8%;                          
     }
     .text-bx{
         width: 100%;
