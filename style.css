@@ -19,9 +19,9 @@ nav{
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    background-color: #3a1705;
+    background-color: lightblue;
     box-shadow: 20px; 
-    position:relative;   
+    position:fixed;   
     top: 0;
     left: 0;
     width: 100%;
@@ -31,7 +31,7 @@ nav .menu-icon{
     cursor: pointer;
     display: none;
 }
-nav .logo a{
+a#logo{
     font-size: 30px;
     font-weight: bold;
     color: #5654b3;
@@ -48,16 +48,17 @@ nav ul li{
     padding: 0 15px;
     margin-right: 5px;
     text-shadow: 5px #000;
+    cursor: pointer;
 }
 nav ul li a{
     text-decoration: none;
     font-size: 18px;    
     text-transform: uppercase;
     color: #5654b3;
-    text-shadow: 2px 2px #000;    
+     
 }
 nav ul li a:hover{
-    text-shadow: 3px 3px 3px rgba(235,237,90, 0.3) ;    
+    text-shadow: 3px 3px 3px rgba(255, 221, 0, 0.9);    
     
 }
 nav button{
@@ -78,21 +79,21 @@ main{
     align-items: center;     
     justify-content: space-between;         
     background-color: #08052e;
-    padding: 8%;
+    padding:18% 8% 8% 8%;
 }
-.text-bx{
+#text-bx{
     width: 45%;
     align-items: center;
 }
-.text-bx h1{
+#text-bx h1{
     font-size: 3rem;
     text-transform: uppercase;
     color: #fff;
 }
-.text-bx h2{
+#text-bx h2{
     color: #fff;        
 }
-.text-bx p{
+#text-bx p{
     color: #fff;
     font-weight: 400;
     margin-top: 20px;
@@ -103,7 +104,7 @@ main{
                 1px -1px 0px #fa0c0c,                  
                 1px 0px 0px #fa0c0c;
 }
-.text-bx .input-bx{
+#text-bx .input-bx{
     margin: 20px 0;
     display: flex;
 }
@@ -156,7 +157,7 @@ main{
    .img-bx:hover + .img-bx .about{
     visibility: visible;
    }
-   .projetos{
+   #projetos{
     display:flex;
     width: 100%;
     flex-wrap: wrap;
@@ -164,9 +165,7 @@ main{
     text-align: center;  
     padding: 15% 8%;
     background-color: #08052e;
-    align-content:center;
-    
-    
+    align-content:center;    
    }
    .projeto{
     width: 180px ;
@@ -200,7 +199,7 @@ main{
     border-bottom-left-radius: 50%;
     font-weight: 600;
    }
-   .div_3{
+   #sobre_txt{
     background-image: url("imagens/photo2.jpg") ;
     background-size: cover;
     background-position: center;
@@ -215,7 +214,7 @@ main{
     display: flex;
     overflow:auto;             
    }   
-   .div_3 p{        
+   #sobre_txt p{        
    color: #fff;
    font-size: 25px;
    line-height: 30px;
@@ -230,7 +229,7 @@ main{
    background-color:rgba(0,0,0,0.9  );   
    text-shadow: black 0.1em 0.1em 0.2em;  
    }
-   .form{
+   form{
     width: 100%;
     background-color: #08052e;
     display: flex;
@@ -239,9 +238,18 @@ main{
     margin: 0;
     color: #fff;
   }
-  .form input{
+  form input{
     margin: 3px;
   }
+  form button{
+    display:block;
+    width: 80px;
+    margin: 10px 5px;
+    padding: 10px;
+    color: #1d307c;
+    align-content: center;
+  }
+  
   input#msg{
     height: 50%;
   }
@@ -300,7 +308,7 @@ main{
         transform: translateX(0);
     }
     nav ul li{
-        padding: 10px;
+        padding: 10px;        
     }
     nav ul li a{
         font-size: 18px;
@@ -316,7 +324,7 @@ main{
         justify-content:space-between;  
         padding-top: 18% 8%;                          
     }
-    .text-bx{
+    #text-bx{
         width: 100%;
         text-align: center;
     }
@@ -326,10 +334,10 @@ main{
         
    
     }
-    .text-bx{
+    #text-bx{
         margin-bottom: 40px;
     }
-    .text-bx .input-bx{
+    #text-bx .input-bx{
         justify-content: center;
     }
     .div_2{
@@ -345,10 +353,10 @@ main{
         align-items: center;        
         
     }
-    .div_3{
+    #sobre_txt{
     height: 500px;     
        }   
-       .div_3 p{               
+       #sobre_txt p{               
        font-size: 30px; 
        text-align:left;
        height: 100%;  
